@@ -15,6 +15,7 @@ namespace Api
             this.productData = productData;
         }
 
+
         [FunctionName("ProductsGet")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req)
